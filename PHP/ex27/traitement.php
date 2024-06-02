@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>ex 18</title>
+        <title>ex 27</title>
         <meta charset="UTF-8">
     </head>
     <body>
         <?php
-            $nb = "";
+            $cm = "";
             if($_SERVER["REQUEST_METHOD"]=="POST") {
-                $nb = $_POST["nb"];
+                $cm = $_POST["cm"];
             }
-            echo "Le carré de ce nombre est ", $nb**2;
+            echo sprintf("%s cm = %s pouces.", $cm, $cm/2.54);
         ?>
     </body>
 </html>

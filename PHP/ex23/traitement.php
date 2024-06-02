@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>ex 20</title>
+        <title>ex 23</title>
         <meta charset="UTF-8">
     </head>
     <body>
         <?php
-            $longeur="";
+            $longeur = "";
             if($_SERVER["REQUEST_METHOD"]=="POST") {
                 $longeur = $_POST["longeur"];
             }
-            echo sprintf("Un carré qui a un côté de %d longeur cm aura un périmètre de %d et une surface de %d.", $longeur, $longeur*4, $longeur**2);
+            echo sprintf("Un cube qui a une arrête de %s cm aura une surface de %.2f cm² et un volume de %.2f cm.", $longeur, 6*$longeur**2, $longeur**3);
         ?>
     </body>
 </html>
