@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Ex 30</title>
+        <title>Ex 32</title>
         <meta charset="UTF-8">
     </head>
     <body>
         <?php
-            $nombre = "";
+            $age = "";
             if($_SERVER["REQUEST_METHOD"]=="POST") {
-                $nombre = $_POST["nombre"];
+                $age = $_POST["age"];
             }
-            if($nombre<0){
-                echo "Votre nombre est négatif";
+            if($age<18){
+                echo "Vous êtes mineur.";
             } else {
-                echo "Votre nombre est positif";
+                echo "Vous êtes majeur.";
             }
         ?>
     </body>

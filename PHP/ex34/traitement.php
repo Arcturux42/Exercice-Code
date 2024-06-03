@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Ex 30</title>
+        <title>Ex 34</title>
         <meta charset="UTF-8">
     </head>
     <body>
@@ -12,8 +12,10 @@
             }
             if($nombre<0){
                 echo "Votre nombre est négatif";
-            } else {
+            } elseif($nombre>0) {
                 echo "Votre nombre est positif";
+            } else {
+                echo "Votre nombre est nul";
             }
         ?>
     </body>
